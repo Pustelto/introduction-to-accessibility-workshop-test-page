@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>AllShop - best stuff for almost best prices.</title>
+  <link href="/styles.css" rel="stylesheet" />
+  <link href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css " rel="stylesheet" />
+  <script defer src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
+</head>
+
+<body class="antialiased">
+  {{content|safe}}
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var logoSlider = new Splide('#logos-slider', {
+        perPage: 4,
+        focus: 0,
+        omitEnd: true,
+      });
+      logoSlider.mount();
+
+      var newProductsSlider = new Splide('#new-products-slider', {
+        perPage: 3,
+        focus: 0,
+        gap: "2rem",
+        pagination: false,
+        // mediaQuery: "min",
+        omitEnd: true,
+        breakpoints: {
+          1020: {perPage: 2},
+          540: {perPage: 1},
+        }
+      });
+      newProductsSlider.mount();
+
+      var newProductsSlider = new Splide('#fav-products-slider', {
+        perPage: 3,
+        focus: 0,
+        gap: "2rem",
+        pagination: false,
+        // mediaQuery: "min",
+        omitEnd: true,
+        breakpoints: {
+          1020: {perPage: 2},
+          540: {perPage: 1},
+        }
+      });
+      newProductsSlider.mount();
+    })
+  </script>
+</body>
+
+</html>

@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./*.html"],
+  content: ["./_site/**/*.html"],
   theme: {
     extend: {
       gridTemplateColumns: {
@@ -10,6 +10,9 @@ module.exports = {
       gridTemplateRows: {
         // Complex site-specific row configuration
         main: "200px minmax(0px, 1fr)",
+      },
+      backgroundImage: {
+        "spring-sale-banner": "url('/images/spring-sale-banner.png')",
       },
     },
   },

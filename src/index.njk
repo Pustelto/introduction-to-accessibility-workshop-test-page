@@ -1,0 +1,100 @@
+---
+layout: layouts/page.njk
+---
+
+<div class="grid grid-cols-1 gap-12 grid-rows-[250px,_300px,_1fr,_1fr,1fr]">
+  <!-- Banner -->
+  <div class="flex banner relative bg-gradient-to-r from-blue-800 to-blue-600 rounded">
+    <div class="w-full py-8 px-4 flex flex-col text-white bg-spring-sale-banner
+      bg-[calc(100%_+_1rem)_calc(100%_+_4rem)]
+      bg-[length:50%] bg-no-repeat">
+      <h2 class="text-3xl font-bold">Spring discounts</h2>
+      <span class="mt-4 font-medium text-xl">Our top products for best prices!</span>
+      <span class="mt-[auto] font-medium text-xl">Click here &rarr;</span>
+    </div>
+    <a class="absolute inset-0" href="/banner"></a>
+  </div>
+
+  <!-- Slider -->
+  <div>
+    <h2 class="text-2xl text-slate-900 font-semibold mt-6 mb-4">Best selling brands</h2>
+    <div id="logos-slider" class="splide">
+      <div class="splide__arrows">
+        <button class="splide__arrow splide__arrow--prev">
+          <span aria-hidden><img src="/images/icons/arrow_left.svg" /></span>
+        </button>
+        <button class="splide__arrow splide__arrow--next">
+          <span aria-hidden><img src="/images/icons/arrow_right.svg" /></span>
+        </button>
+      </div>
+      <div class="splide__track">
+        <ul class="splide__list">
+          {% include "logo_tile.njk" %}
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- New stuff -->
+  <div>
+    <h2 class="text-2xl text-slate-900 font-semibold mt-6 mb-4">New products</h2>
+    {% set productType = "New product" %}
+    <div id="new-products-slider" class="splide">
+      <div class="splide__arrows">
+        <button class="splide__arrow splide__arrow--prev">
+          <span aria-hidden><img src="/images/icons/arrow_left.svg" /></span>
+        </button>
+        <button class="splide__arrow splide__arrow--next">
+          <span aria-hidden><img src="/images/icons/arrow_right.svg" /></span>
+        </button>
+      </div>
+      <div class="splide__track">
+        <ul class="splide__list">
+          <!-- <div class="overflow-scroll grid gap-8 grid-flow-col auto-cols-[minmax(270px,_1fr)] splide__list"> -->
+          {% for product in products %}
+          <li class="splide__slide">
+            {% include "product_tile.njk" %}
+          </li>
+          {% endfor %}
+          <!-- </div> -->
+        </ul>
+      </div>
+    </div>
+    {% set productType = "" %}
+  </div>
+
+  <!-- Most favorite products -->
+  <div>
+    <h2 class="text-2xl text-slate-900 font-semibold mt-6 mb-4">Most favorite products</h2>
+    <div>
+      {% set productType = "Best deal" %}
+      <div id="fav-products-slider" class="splide">
+        <div class="splide__arrows">
+          <button class="splide__arrow splide__arrow--prev">
+            <span aria-hidden><img src="/images/icons/arrow_left.svg" /></span>
+          </button>
+          <button class="splide__arrow splide__arrow--next">
+            <span aria-hidden><img src="/images/icons/arrow_right.svg" /></span>
+          </button>
+        </div>
+        <div class="splide__track">
+          <ul class="splide__list">
+            <!-- <div class="overflow-scroll grid gap-8 grid-flow-col auto-cols-[minmax(270px,_1fr)] splide__list"> -->
+            {% for product in products %}
+            <li class="splide__slide">
+              {% include "product_tile.njk" %}
+            </li>
+            {% endfor %}
+            <!-- </div> -->
+          </ul>
+        </div>
+      </div>
+      {% set productType = "" %}
+    </div>
+  </div>
+
+  <!-- We are testing -->
+  <div>
+    <h2 class="text-2xl text-slate-900 font-semibold mt-6 mb-4">We are testing</h2>
+    {% include "blog_tile.njk" %}
+  </div>
+</div>
