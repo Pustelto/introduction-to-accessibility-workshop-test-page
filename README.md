@@ -1,5 +1,10 @@
 # Practical introduction to accessibility workshop - practice page
 
+WORK IN PROGRESS
+
+Test page for a Practical introduction to accessibility workshop. Used to test and experiment with
+various accessibility tools and techniques.
+
 ## TODO
 
 - [x] sidebanners
