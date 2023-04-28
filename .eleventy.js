@@ -11,6 +11,7 @@ module.exports = function(config) {
   // Copy assets
   config.addPassthroughCopy("src/fonts");
   config.addPassthroughCopy("src/images");
+  config.addPassthroughCopy("src/js");
   config.addPassthroughCopy({
     "src/_includes/assets/css/styles.css": "./styles.css",
   });

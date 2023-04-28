@@ -2,7 +2,8 @@
 layout: layouts/page.njk
 ---
 
-<div class="grid grid-cols-1 gap-12 grid-rows-[250px,_300px,_1fr,_1fr,1fr]">
+<div class="grid grid-cols-1 gap-8 md:gap-10 lg:gap-12
+  grid-rows-[250px,_min-content,_min-content,_min-content,1fr] lg:grid-rows-[250px,_300px,_1fr,_1fr,_1fr]">
   <!-- Banner -->
   <div class="flex banner relative bg-gradient-to-r from-blue-800 to-blue-600 rounded">
     <div class="w-full py-8 px-4 flex flex-col text-white bg-spring-sale-banner
@@ -79,7 +80,7 @@ layout: layouts/page.njk
         <div class="splide__track">
           <ul class="splide__list">
             <!-- <div class="overflow-scroll grid gap-8 grid-flow-col auto-cols-[minmax(270px,_1fr)] splide__list"> -->
-            {% for product in products %}
+            {% for product in products|reverse %}
             <li class="splide__slide">
               {% include "product_tile.njk" %}
             </li>
