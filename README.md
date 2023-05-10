@@ -23,7 +23,7 @@ controls for the screen reader and try to start it.
 Feel free to play with it in a browser, but we will cover the basics on the workshop.
 
 - macOS - [VoiceOver](https://dequeuniversity.com/screenreaders/voiceover-keyboard-shortcuts)
-- Windows
-  - Either use [Narrator](https://dequeuniversity.com/screenreaders/narrator-keyboard-shortcuts)
-  - Or [NVDA](https://dequeuniversity.com/screenreaders/nvda-keyboard-shortcuts) (free screen reader)
+- Windows (choose one)
+  - [Narrator](https://dequeuniversity.com/screenreaders/narrator-keyboard-shortcuts) (build-in Windows screen reader)
+  - [NVDA](https://dequeuniversity.com/screenreaders/nvda-keyboard-shortcuts) (free screen reader)
 - Linux - [Orca](https://help.gnome.org/users/orca/stable/)
