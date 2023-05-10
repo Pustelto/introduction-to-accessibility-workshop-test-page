@@ -7,10 +7,7 @@ import { PRODUCTS } from "@/data/products";
 
 export default function Home() {
   return (
-    <div
-      className="grid grid-cols-1 gap-8 md:gap-10 lg:gap-12
-  grid-rows-[250px,_min-content,_min-content,_min-content,1fr] lg:grid-rows-[250px,_300px,_1fr,_1fr,_1fr]"
-    >
+    <div className="grid grid-cols-1 gap-8 md:gap-10 grid-rows-[250px,_min-content,_min-content,_min-content,1fr] lg:grid-rows-[250px,_300px,_min-content,_min-content,1fr]">
       <div className="flex banner relative bg-gradient-to-r from-blue-800 to-blue-600 rounded">
         <div
           className="w-full py-8 px-4 flex flex-col text-white bg-spring-sale-banner
@@ -29,7 +26,7 @@ export default function Home() {
       </div>
 
       <div>
-        <h2 className="text-2xl text-slate-900 font-semibold mt-6 mb-4">
+        <h2 className="text-3xl text-slate-900 font-semibold mt-6 mb-4">
           Best selling brands
         </h2>
         <div id="logos-slider" className="splide">
@@ -56,7 +53,7 @@ export default function Home() {
       </div>
 
       <div>
-        <h2 className="text-2xl text-slate-900 font-semibold mt-6 mb-4">
+        <h2 className="text-3xl text-slate-900 font-semibold mt-6 mb-4">
           New products
         </h2>
         <div id="new-products-slider" className="splide">
@@ -85,7 +82,7 @@ export default function Home() {
       </div>
 
       <div>
-        <h2 className="text-2xl text-slate-900 font-semibold mt-6 mb-4">
+        <h2 className="text-3xl text-slate-900 font-semibold mt-6 mb-4">
           Most favorite products
         </h2>
         <div>
@@ -116,9 +113,15 @@ export default function Home() {
       </div>
 
       <div>
-        <h2 className="text-2xl text-slate-900 font-semibold mt-6 mb-4">
-          We are testing
-        </h2>
+        <hr className="mb-20 mt-10" />
+        <div className="mb-16">
+          <h2 className="text-4xl text-slate-900 font-semibold mt-6 mb-4">
+            Journal
+          </h2>
+          <p className="text-gray-600 text-xl">
+            In-depth tests, impressions and reviews about all our products.
+          </p>
+        </div>
         <div className="grid gap-8 grid-cols-1 md:grid-cols-2">
           {BLOGS.map((blog) => (
             <BlogTile blog={blog} />

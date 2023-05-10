@@ -2,7 +2,7 @@ import kebabCase from "lodash/kebabCase";
 
 export function BlogTile({ blog }) {
   return (
-    <div className="flex flex-col gap-2">
+    <div className="flex flex-col gap-4">
       <img src={blog.image} className="h-[280px] rounded-lg object-cover" />
       <div>
         <span className="text-sm text-gray-400">16 April 2023</span>

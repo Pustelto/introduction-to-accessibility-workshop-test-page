@@ -1,5 +1,6 @@
 export const PRODUCTS = [
   {
+    id: 1,
     name: "Fridge Mitch 3000",
     price: 8999,
     image: "/images/products/fridge.jpg",
@@ -7,12 +8,14 @@ export const PRODUCTS = [
     energyClass: "A++",
   },
   {
+    id: 2,
     name: "Xbox",
     price: 14399,
     image: "/images/products/xbox.jpg",
     rating: 3.4,
   },
   {
+    id: 3,
     name: "Washing machine Linda",
     price: 3999,
     image: "/images/products/washing_machine.jpg",
@@ -20,6 +23,7 @@ export const PRODUCTS = [
     energyClass: "D",
   },
   {
+    id: 4,
     name: "Kithen mixer deluxe",
     price: 4999,
     image: "/images/products/mixer.jpg",
@@ -27,18 +31,21 @@ export const PRODUCTS = [
     energyClass: "A",
   },
   {
+    id: 5,
     name: "Gaming laptop",
     price: 29999,
     rating: 4.2,
     image: "/images/products/gaming_laptop.jpg",
   },
   {
+    id: 6,
     name: "Headphones",
     price: 2999,
     rating: 2.7,
     image: "/images/products/headphones.jpg",
   },
   {
+    id: 7,
     name: "Fridge FreshForever XL",
     price: 11999,
     image: "/images/products/fridge_2.jpg",
@@ -46,23 +53,27 @@ export const PRODUCTS = [
     energyClass: "C",
   },
   {
+    id: 8,
     name: "iPhone",
     price: 38999,
     rating: 4.7,
     image: "/images/products/iphone.jpg",
   },
   {
+    id: 9,
     name: "PlayStation controller charger",
     price: 1299,
     image: "/images/products/controller_charger.png",
   },
   {
+    id: 10,
     name: "Thor Powerbank 20k",
     price: 1999,
     rating: 3.5,
     image: "/images/products/powerbank.jpg",
   },
   {
+    id: 11,
     name: "Oven Crispy Brown",
     price: 6999,
     image: "/images/products/oven.jpg",

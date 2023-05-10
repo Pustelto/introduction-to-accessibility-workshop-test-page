@@ -1,5 +1,5 @@
 import kebabCase from "lodash/kebabCase";
-import { Button } from "./Button";
+import { AddToCartButton } from "./Cart/AddToCartButton";
 
 export function ProductTile({ product, productType }) {
   return (
@@ -44,7 +44,7 @@ export function ProductTile({ product, productType }) {
             ${product.price}
           </span>
         </div>
-        <Button>Add to cart</Button>
+        <AddToCartButton itemId={product.id} />
       </div>
     </div>
   );

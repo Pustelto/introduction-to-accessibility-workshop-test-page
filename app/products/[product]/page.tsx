@@ -1,4 +1,4 @@
-import { Button } from "@/components/Button";
+import { AddToCartButton } from "@/components/Cart/AddToCartButton";
 import { Rating } from "@/components/Rating";
 import { PRODUCTS } from "@/data/products";
 import kebabCase from "lodash/kebabCase";
@@ -58,7 +58,7 @@ export default function ProductCategory({ params }) {
                 <Rating rating={product.rating} />
               </div>
             </div>
-            <Button>Add to cart</Button>
+            <AddToCartButton itemId={product.id} />
           </div>
         </div>
 
