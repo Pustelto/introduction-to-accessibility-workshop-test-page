@@ -1,22 +1,26 @@
 {
-  "name": "a11y-ws-practice-page",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "practical-a11y-ws",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "serve": "eleventy --serve --incremental",
-    "css:watch": "tailwind -i ./src/styles.css -o ./_site/styles.css --watch",
-    "css": "postcss src/styles.css --o src/_includes/assets/css/styles.css --watch",
-    "start": "concurrently \"npm run css\" \"npm run serve\""
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@11ty/eleventy": "2.0.0",
-    "tailwindcss": "3.2.7",
+  "dependencies": {
+    "@types/node": "20.1.1",
+    "@types/react": "18.2.6",
+    "@types/react-dom": "18.2.4",
     "autoprefixer": "10.4.14",
-    "concurrently": "7.6.0",
-    "postcss-cli": "10.1.0"
+    "eslint": "8.40.0",
+    "eslint-config-next": "13.4.1",
+    "lodash": "4.17.21",
+    "next": "13.4.1",
+    "postcss": "8.4.23",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "tailwindcss": "3.3.2",
+    "typescript": "5.0.4"
   }
 }
