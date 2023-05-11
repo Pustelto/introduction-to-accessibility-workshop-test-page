@@ -11,8 +11,8 @@ You will need **git**, **Node** (at least v16), and **npm** or some other packag
 prefered, but it is not mandatory).
 
 1. Clone this repo
-1. Go into the project folder and run `npm install` to install the dependencies
-1. Run `npm run dev`
+1. Go into the project folder and run `pnpm install` to install the dependencies
+1. Run `pnpm run dev`
 1. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ### 2. Prepare a screen reader
