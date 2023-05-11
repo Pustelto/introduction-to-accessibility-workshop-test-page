@@ -1,15 +1,15 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useCartStore } from "./state";
 import { CartContent } from "./CartContent";
 
 export function Cart({ }) {
   const content = useCartStore((state) => state.content);
-  const totalQty = Object.values(content).reduce(
-    (qty, total) => total + qty,
-    0
-  );
+  const [totalQty, setTotalQty] = useState(0);
+  useEffect(() => {
+    setTotalQty(Object.values(content).reduce((qty, total) => total + qty, 0));
+  }, [content]);
   const [isOpen, setOpen] = useState(false);
 
   return (
