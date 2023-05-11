@@ -22,10 +22,7 @@ export default function ProductCategory({ params }) {
             Lorem ipsum euismod congue suspendisse, phasellus viverra porta
             eleifend, mollis aliquet libero. Imperdiet pretium eget sollicitudin
             curae diam ornare hendrerit cursus hendrerit pharetra, ornare massa
-            aliquam pharetra primis cubilia donec ligula quisque. Sagittis ante
-            nunc torquent primis eleifend conubia eros cras sed cubilia, et
-            velit consectetur dapibus congue sollicitudin risus per conubia
-            nisl, quisque consequat himenaeos luctus ac platea in varius porta.
+            aliquam pharetra primis cubilia donec ligula quisque.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 gap-y-12">

@@ -37,12 +37,15 @@ export function Cart({ }) {
       {isOpen && (
         <div
           id="cart-content"
-          className="absolute shadow-gray-600 shadow-md py-8 px-6 bg-white w-[400px] right-0 z-10"
+          className="absolute shadow-gray-400 shadow-md py-4 px-4 bg-white w-[400px] right-0 z-10 rounded-s"
         >
           {totalQty > 0 ? (
             <CartContent content={content} />
           ) : (
-            <div>Cart is empty</div>
+            <div className="flex flex-col items-center justify-center gap-6">
+              <div className="text-5xl text-gray-300 font-bold">:-(</div>
+              <div className="text-gray-400 text-lg">Cart is empty</div>
+            </div>
           )}
         </div>
       )}
