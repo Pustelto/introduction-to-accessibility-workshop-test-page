@@ -9,10 +9,13 @@ export function MainMenu() {
       <ul>
         {CATEGORIES.map((category) => (
           <li
-            key={kebabCase(category)}
-            className="py-1 hover:text-blue-800 focus-within:text-blue-800"
+            key={category.id}
+            className="py-1 hover:text-blue-800 focus-within:text-blue-800 h-[40px]"
           >
-            <a href={`/product-categories/${kebabCase(category.name)}/`}>
+            <a
+              href={`/product-categories/${kebabCase(category.name)}/`}
+              className="leading-7"
+            >
               {category.name}
             </a>
           </li>
